@@ -1,18 +1,23 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
+.main {
+  display: flex;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
 }
-
+.navbar-nav > a {
+  color: #fff;
+  padding: 0px 10px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,16 +28,87 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items-list {
+  list-style-type: none;
+}
+.product-container {
+  display: flex;
+  width: 78%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.filters {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 10px;
+}
+.filters > span {
+  padding-bottom: 5px;
+}
+.title {
+  font-size: 20px;
+}
+.filters .form-check-label {
+  font-size: 14px;
+}
+.clear-filters {
+  font-size: 15px;
+}
+.products {
+  width: 30%;
+  margin: 10px;
+  float: left;
+  height: 370px;
+}
+.products > img {
+  max-width: 150px;
+}
+.card-title {
+  font-size: 18px;
+}
+.product-desc {
+  font-size: 14px;
+}
+.cart-btn {
+  font-size: 12px;
+}
+.badge {
+  background-color: transparent !important;
+}
+.dropdown-menu[data-bs-popper] {
+  left: -350px;
+}
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 7px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.cartItemImg {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.cartItemDetail {
+  display: flex;
+  flex: 1;
+  padding: 0 10px;
+  flex-direction: column;
+  font-size: 14px;
 }
